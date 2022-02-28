@@ -82,4 +82,6 @@ var questions = [
     }
 ];
 
-startButton.addEventListener('click', startQuiz);
+startButton.onclick = () => {
+    startQuiz();
+}
