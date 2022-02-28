@@ -82,3 +82,18 @@ header h1 {
     text-align: center;
 }
 
+.quiz-box {
+    margin: auto;
+    width: 60%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+}
+
+.quiz-box.activeQuiz {
+    opacity: 1;
+    z-index: 10;
+}
+

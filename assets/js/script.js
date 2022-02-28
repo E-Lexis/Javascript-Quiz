@@ -1,4 +1,4 @@
-
+//Quiz
 function startQuiz() {
 
     var output = [];
@@ -25,9 +25,12 @@ function startQuiz() {
 
 }
 
+//Linking buttons and content
+
 var startButton = document.getElementById('start');
-var quizContainer = document.getElementById('quiz');
-var resultsContainer = document.getElementById('results');
+var infoContainer = document.querySelector(".info-box");
+var quizContainer = document.querySelector(".quiz-box");
+var resultsContainer = document.getElementById('results')
 
 var questions = [
     {
@@ -82,6 +85,8 @@ var questions = [
     }
 ];
 
+//Start Quiz clicked
 startButton.onclick = () => {
-    startQuiz();
+    infoContainer.classList.remove("info-box");
+    quizContainer.classList.add(".activeQuiz");
 }
