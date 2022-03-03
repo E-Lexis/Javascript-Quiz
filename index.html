@@ -16,46 +16,54 @@
             <p class="timer">Timer:</p>
         </div>
     </header>
+    
+    <main>
+        <!--Introduction-->
+        <section id="info" class="info-box">
+            <div class="intro-title">
+                <h2>Rules</h2>
+            </div>
+            <div class="rules">
+                <p>
+                    <ul>
+                        <li>1. You will have a total of 60 seconds to answer x questions.</li>
+                        <li>2. You cannot move onto the next question until the current question is answered correctly.</li>
+                        <li>3. The quiz will end either when all questions are answered or when the timer reaches 0.</li>
+                        <li>4. Your score is determined by the amount of time left on the clock.</li>
+                        <li>5. Do your best and feel free to take this quiz as many times as you'd like!</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="button-wrapper"><button id="start" class="start-button">Start Quiz!</button></div>
+        </section>
 
-<!--Introduction-->
-    <section id ="info" class="info-box">
-        <div class="intro-title">
-            <h2>Rules</h2>
-        </div>
-        <div class="rules">
-            <p>
-                <ul>
-                    <li>1. You will have a total of 60 seconds to answer x questions.</li>
-                    <li>2. You cannot move onto the next question until the current question is answered correctly.</li>
-                    <li>3. The quiz will end either when all questions are answered or when the timer reaches 0.</li>
-                    <li>4. Your score is determined by the amount of time left on the clock.</li>
-                    <li>5. Do your best and feel free to take this quiz as many times as you'd like!</li>
-                </ul>
-            </p>
-        </div> 
-        <div class="button-wrapper"><button id="start" class="start-button">Start Quiz!</button></div>
-    </section>
+        <!--Quiz-->
 
-   <!--Quiz-->
-    <section id="quiz" class="quiz-box">
-        <div class="question">
-            <p>Question</p>
-        </div>
-        <div class="choice-list">
-            <p class="choice">
-                Answer
-            </p>
-            <p class="choice">
-                Answer
-            </p>
-            <p class="choice">
-                Answer
-            </p>
-            <p class="choice">
-                Answer
-            </p>
-        </div>
-    </section>
+        <!--Question head-->
+        <section id="quiz" class="quiz-box">
+            <div class="question">
+                <h3>Question</h3>
+            </div>
+
+            <!--Answer list-->
+            <div class="option-list">
+                <div class="option">
+                    <button id="option1" class="option-btn">Answer 1</button>
+                </div>
+                <div class="option">
+                    <button id="option2" class="option-btn">Answer 2</button>
+                </div>
+                <div class="option">
+                    <button id="option3" class="option-btn">Answer 3</button>
+                </div>
+                <div class="option">
+                    <button id="option4" class="option-btn">Answer 4</button>
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
 
 
     <footer></footer>

@@ -92,8 +92,45 @@ header h1 {
     opacity: 0;
 }
 
+.question {
+    margin: auto;
+    display: flex;
+    flex: 1;
+    justify-content: flex-start
+}
+
+.question h3 {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: left;
+    color: #121111;
+    flex: 1;
+}
+
 .quiz-box.activeQuiz {
     opacity: 1;
     z-index: 10;
 }
 
+.option-list {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.option {
+    margin: 20px;
+}
+
+.option-btn {
+    background-color: rgba(198,98,218,1);
+    color: #FFFFFF;
+    border-radius: 12px;
+    padding: 15px 32px;
+    border: none;
+}
+
+.option-btn:hover {
+    background-color: rgb(212 169 221);
+}

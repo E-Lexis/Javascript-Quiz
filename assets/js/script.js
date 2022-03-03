@@ -1,3 +1,10 @@
+//Linking buttons and content
+
+var startButton = document.querySelector('#start');
+var infoContainer = document.querySelector('.info-box');
+var quizContainer = document.querySelector('.quiz-box');
+var resultsContainer = document.querySelector('#results')
+
 //Quiz
 function startQuiz() {
 
@@ -25,12 +32,7 @@ function startQuiz() {
 
 }
 
-//Linking buttons and content
 
-var startButton = document.getElementById('start');
-var infoContainer = document.querySelector(".info-box");
-var quizContainer = document.querySelector(".quiz-box");
-var resultsContainer = document.getElementById('results')
 
 var questions = [
     {
@@ -87,6 +89,6 @@ var questions = [
 
 //Start Quiz clicked
 startButton.onclick = () => {
-    infoContainer.classList.remove("info-box");
-    quizContainer.classList.add(".activeQuiz");
+    infoContainer.remove('info-box');
+    quizContainer.classList.add('activeQuiz');
 }
