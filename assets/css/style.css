@@ -136,3 +136,12 @@ header h1 {
 .option-btn:hover {
     background-color: rgb(212 169 221);
 }
+
+input[type="radio"] {
+    position: relative;
+    display: none;
+}
+
+input[type=radio]:checked ~ .choice {
+    background: paleturquoise;
+}
