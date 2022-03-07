@@ -22,6 +22,6 @@ THEN the game is over
 WHEN the game is over  
 THEN I can save my initials and score
 
-Live URL:
+Live URL: https://e-lexis.github.io/Javascript-Quiz/
 
 ![Site capture](./sitecapture.png)
