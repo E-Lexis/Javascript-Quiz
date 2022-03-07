@@ -12,8 +12,7 @@
     <header>
         <h1 class="title">Javascript Quiz</h1>
         <div class="header-info">
-            <p class="viewscore">View Highscores</p>
-            <p class="timer">Timer:</p>
+            <button id="view-scores" class="score-btn">View Scores</button>
         </div>
     </header>
     
@@ -26,11 +25,12 @@
             <div class="rules">
                 <p>
                     <ul>
-                        <li>1. You will have a total of 60 seconds to answer x questions.</li>
-                        <li>2. You cannot move onto the next question until the current question is answered correctly.</li>
+                        <li>1. You will have a total of 75 seconds to answer 10 questions.</li>
+                        <li>2. You cannot move onto the next question until the current question is answered.</li>
                         <li>3. The quiz will end either when all questions are answered or when the timer reaches 0.</li>
-                        <li>4. Your score is determined by the amount of time left on the clock.</li>
-                        <li>5. Do your best and feel free to take this quiz as many times as you'd like!</li>
+                        <li>4. Each wrong answer will cause you to lose 5 seconds off of the timer.</li>
+                        <li>5. Your score is determined by the amount of questions you get correct.</li>
+                        <li>6. Do your best and feel free to take this quiz as many times as you'd like!</li>
                     </ul>
                 </p>
             </div>
@@ -41,6 +41,10 @@
 
         <!--Question head-->
         <section id="quiz" class="quiz-box">
+            <header class="quiz-header-footer">
+                Time:<span id="time-left"></span>
+            </header>
+
             <div class="question-container">
                 <h3 id="display-question"></h3>
             </div>
@@ -64,15 +68,32 @@
                     <label for="button4" class="option-btn" id="button4-label"></label>
                 </div>
             </div>
-            
+
+            <footer class="quiz-header-footer">Score:<span id="player-score"></span></footer>
+        </section>
+
+        <section id="end-quiz" class="results-box">
+            <div class="results-title">
+                <h2>End of Quiz!</h2>
+            </div>
+
+            <div class="results">
+                <p>Your Score: <span id="right-answers"></span></p>
+                <form>
+                    <label for="userInitials">Enter your initials:</label>
+                    <input type="text" id="userInitials" name="userInitials" />
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
+
+            <div class="retry-btn-wrapper"><button id="retry" class="retry-btn">Retry</button></div>
         </section>
 
     </main>
 
 
-    <footer></footer>
+   
 
-
-    <script src="./assets/js/script.js"></script>
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
